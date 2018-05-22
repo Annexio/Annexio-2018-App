@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="AnnexioWebApp.LoaderView">
+    <ContentView.Content>
+        <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+            <WebView Grid.Row="0" x:Name="annexioView"></WebView>
+            <ContentView x:Name="overlayView" BackgroundColor="#303b41" HorizontalOptions="FillAndExpand">
+                <ContentView.Content>
+                    <StackLayout Spacing="14" Padding="10" HorizontalOptions="Center" VerticalOptions="Center">
+                        <Image Source="logo.png"/>
+                        <Label Text="LOADING" TextColor="White" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" FontSize="22"></Label>
+                        <ActivityIndicator IsRunning="true" Color="white" IsVisible="true" />
+                    </StackLayout>
+                </ContentView.Content>
+            </ContentView>
+            <ContentView x:Name="errorView" BackgroundColor="#303b41" HorizontalOptions="FillAndExpand" IsVisible="False">
+                <ContentView.Content>
+                    <StackLayout Spacing="20" Padding="20" HorizontalOptions="Center" VerticalOptions="Center">
+                        <Image Source="logo.png"/>
+                        <Label TextColor="White" HorizontalTextAlignment="Center" x:Name="errorMessageText" Text="There was an unexpected problem." />
+                        <Label TextColor="White" HorizontalTextAlignment="Center" x:Name="errorMessageReason" FontSize="10" Text="E_UNKNOWN" />
+                        <Button BackgroundColor="#303b41" TextColor="White" x:Name="retryButton" BorderColor="Gray" BorderWidth="1" BorderRadius="5" Text="Try Again" Clicked="ReloadButton_Clicked" />
+                    </StackLayout>
+                </ContentView.Content>
+            </ContentView>
+        </Grid>
+    </ContentView.Content>
+</ContentView>

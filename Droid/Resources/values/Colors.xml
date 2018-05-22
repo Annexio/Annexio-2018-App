@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+  <color name="error">#FFCC0000</color>
+  <color name="splash_background">#80303b41</color>
+  <color name="primary_background">#80303b41</color>
+  <color name="secondary_background">#80303b41</color>
+  <color name="primary_text_color">#FFFFFF</color>
+  <color name="secondary_text_color">#444444</color>
+</resources>

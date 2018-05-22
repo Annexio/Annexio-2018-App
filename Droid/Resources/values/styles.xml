@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+  
+    <style name="App.Splash" parent="Theme.AppCompat.NoActionBar">
+      <item name="windowNoTitle">true</item>
+      <item name="windowActionBar">false</item>
+      <item name="android:windowBackground">@color/primary_background</item>
+      <item name="android:windowDisablePreview">true</item>
+    </style>
+  
+    <style name="App.Default.Theme" parent="Theme.AppCompat.NoActionBar">
+      <item name="windowNoTitle">true</item>
+      <item name="windowActionBar">false</item>
+      <item name="colorPrimary">@color/secondary_background</item>
+      <item name="colorAccent">@color/secondary_text_color</item>
+      <item name="android:actionBarItemBackground">@null</item>
+      <item name="android:windowBackground">@color/primary_background</item>
+      <item name="android:windowDisablePreview">true</item>
+      <item name="android:windowIsTranslucent">false</item>
+      <item name="android:windowIsFloating">false</item>
+      <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+</resources>

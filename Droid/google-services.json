@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "206170359725",
+    "firebase_url": "https://annexio-app.firebaseio.com",
+    "project_id": "annexio-app",
+    "storage_bucket": "annexio-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:206170359725:android:b938e63f1b843403",
+        "android_client_info": {
+          "package_name": "com.annexio.wlc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "206170359725-uuq7qvjeqmb0sp6k5upnsn7uvr28m1gf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCouFQsAXBQ7H4GZS3gQORxa86Honzt_kQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:206170359725:android:063864b42f53394a",
+        "android_client_info": {
+          "package_name": "com.annexio.wlcns"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "206170359725-uuq7qvjeqmb0sp6k5upnsn7uvr28m1gf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCouFQsAXBQ7H4GZS3gQORxa86Honzt_kQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

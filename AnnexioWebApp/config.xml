@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<config>
+  <APP_URL>https://www.worldlotteryclub.com</APP_URL>
+  <APPSFLYER_DEV_KEY>J7i7ZsbjEZun9TzVcaEFMg</APPSFLYER_DEV_KEY>
+  <APPSFLYER_GCM_PROJECT_NUMBER></APPSFLYER_GCM_PROJECT_NUMBER>
+  <APPSFLYER_APP_ID>1115716159</APPSFLYER_APP_ID>
+  <APPSFLYER_WEB_PARAMS_ENABLED>true</APPSFLYER_WEB_PARAMS_ENABLED>
+  <XPUSH_APP_KEY>SMqWBS_zFzeTMzl8Z2OwQ7qy__v9KHDS</XPUSH_APP_KEY>
+  <GOOGLE_PROJECT_NUMBER>178901796150</GOOGLE_PROJECT_NUMBER>
+  <EXTERNAL_EXCEPTIONS>LaunchGame,gamcare.org.uk,ibas-uk.com,comodo.com,gamblingtherapy.org,gambleaware.co.uk,parentalcontrolbar.com,netnanny.com,affiliateempire.com,gamblingcommission.org.uk,gamblingcommission.gov.uk,gov.im,gov.au,gamblinghelponline.org.au,gaustralia.org.au,gamstop</EXTERNAL_EXCEPTIONS>
+  <PERMITTEDJURISDICTIONS>UK,GB,IE,AU</PERMITTEDJURISDICTIONS>
+</config>

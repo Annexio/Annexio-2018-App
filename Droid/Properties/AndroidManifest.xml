@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0.5" package="com.annexio.wlcns" android:installLocation="preferExternal">
+	<uses-sdk android:minSdkVersion="15" android:targetSdkVersion="26" />
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<application android:label="AnnexioApp" android:icon="@drawable/icon">
+		<!-- Required For Campaign Functionality -->
+		<activity android:name="ie.imobile.extremepush.ui.OnclickPushActivity" android:exported="false" android:taskAffinity="ie.imobile.extremepush.ui.temptask" />
+		<service android:name="ie.imobile.extremepush.NotificationOnClickHandlerService" />
+		<activity android:name="ie.imobile.extremepush.ui.WebViewActivity" android:exported="false" />
+		<!-- Required For Inbox Functionality -->
+		<activity android:name="ie.imobile.extremepush.ui.InboxActivity" android:label="@string/title_activity_inbox" android:theme="@style/Theme.Transparent" android:configChanges="orientation|screenSize" />
+		<!-- Required For GCM, Location AND Beacon -->
+		<receiver android:name="ie.imobile.extremepush.receivers.CoreBroadcastReceiver">
+			<intent-filter>
+				<action android:name="ie.imobile.extremepush.BEACON_SERVICE_STARTED" />
+				<category android:name="." />
+			</intent-filter>
+			<intent-filter>
+				<action android:name="android.intent.action.BOOT_COMPLETED" />
+				<action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+				<action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+			</intent-filter>
+		</receiver>
+		<receiver android:name="com.google.android.gms.gcm.GcmReceiver" android:exported="true" android:permission="com.google.android.c2dm.permission.SEND">
+			<intent-filter>
+				<action android:name="com.google.android.c2dm.intent.RECEIVE" />
+				<action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+				<category android:name="." />
+			</intent-filter>
+		</receiver>
+		<service android:name="ie.imobile.extremepush.google.GCMListenerService" android:exported="false">
+			<intent-filter>
+				<action android:name="com.google.android.c2dm.intent.RECEIVE" />
+			</intent-filter>
+		</service>
+		<!-- Required For Location Services -->
+		<service android:name="ie.imobile.extremepush.location.GeoLocationService" />
+		<service android:name="ie.imobile.extremepush.location.ProxymityAlertReceiver" />
+		<activity android:name="ie.imobile.extremepush.ui.LocationDialogActivity" android:label="Locations are not available" android:theme="@android:style/Theme.Dialog" android:exported="false" />
+		<!-- Required For iBeacon -->
+		<service android:name="ie.imobile.extremepush.beacons.BeaconLocationService" />
+		<receiver android:name="org.altbeacon.beacon.startup.StartupBroadcastReceiver">
+			<intent-filter>
+				<action android:name="android.intent.action.BOOT_COMPLETED" />
+				<action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+				<action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+			</intent-filter>
+		</receiver>
+		<service android:enabled="true" android:exported="false" android:isolatedProcess="false" android:label="beacon" android:name="org.altbeacon.beacon.service.BeaconService" />
+		<service android:name="org.altbeacon.beacon.BeaconIntentProcessor" android:enabled="true" android:exported="false" />
+		<receiver android:name="com.appsflyer.MultipleInstallBroadcastReceiver" android:exported="true">
+			<intent-filter>
+				<action android:name="com.android.vending.INSTALL_REFERRER" />
+			</intent-filter>
+		</receiver>
+	</application>
+	<!-- REQUIRED for xtremepush -->
+	<uses-permission android:name="android.permission.INTERNET" />
+	<!-- Keeps the processor from sleeping when a message is received. -->
+	<uses-permission android:name="android.permission.WAKE_LOCK" />
+	<!-- OPTIONAL xtremepush settings-->
+	<!-- REQUIRED PERMISSIONS for GCM -->
+	<!-- GCM requires a Google account. -->
+	<uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+	<!-- This app has permission to register with GCM and receive message -->
+	<permission android:name=".permission.C2D_MESSAGE" android:protectionLevel="signature" />
+	<uses-permission android:name=".permission.C2D_MESSAGE" />
+	<!-- The two elements above ensure that only this application can receive the messages and registration result -->
+	<!-- REQUIRED FOR Geo-Location and iBeacon Scanning-->
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+	<!-- REQUIRED IF you support iBeacon and your app must support devices that don't support BLE -->
+	<uses-feature android:name="android.hardware.bluetooth_le" android:required="false" />
+	<uses-permission android:name="android.permission.BLUETOOTH" android:required="false" />
+	<uses-permission android:name="android.permission.BLUETOOTH_ADMIN" android:required="false" />
+	<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+</manifest>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>This App uses your location to ensure you are accessing our service from jurisdictions for which we are licensed. We may also send you marketing based information about our products based upon that location.</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Will you allow this app to know your location even when the App is not in use?</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Would you allow this app to know your current location whilst using the App?</string>
+	<key>CFBundleDisplayName</key>
+	<string>World Lottery Club</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.annexio.wlcapp</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
+	<key>CFBundleVersion</key>
+	<string>1.0.3</string>
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
+	<key>MinimumOSVersion</key>
+	<string>8.0</string>
+	<key>UIDeviceFamily</key>
+	<array>
+		<integer>1</integer>
+		<integer>2</integer>
+	</array>
+	<key>UIRequiredDeviceCapabilities</key>
+	<array>
+		<string>armv7</string>
+	</array>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+	<key>UISupportedInterfaceOrientations~ipad</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationPortraitUpsideDown</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+	<key>XSAppIconAssets</key>
+	<string>Assets.xcassets/AppIcon.appiconset</string>
+	<key>CFBundleName</key>
+	<string>World Lottery Club</string>
+	<key>XSLaunchImageAssets</key>
+	<string>Assets.xcassets/LaunchImage.launchimage</string>
+	<key>XtremePushApplicationKey</key>
+	<string>SMqWBS_zFzeTMzl8Z2OwQ7qy__v9KHDS</string>
+	<key>UIRequiresFullScreen</key>
+	<true/>
+	<key>NSBluetoothPeripheralUsageDescription</key>
+	<string>This app uses Bluetooth communication to detect nearby beacons.</string>
+	<key>NSCalendarsUsageDescription</key>
+	<string>This App uses features within the calendar feature to help geo-locate you within our permitted jurisdictions.</string>
+</dict>
+</plist>
